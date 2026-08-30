@@ -1,0 +1,27 @@
+Responder:
+
+¿Qué hace el programa?
+¿Qué hace la función limpiar?
+¿Qué hace la función es_valido?
+¿Qué nombres quedan almacenados en validos?
+¿Qué imprime el programa al finalizar?
+
+1- el programa crea dos funciones llamadas limpiar y es_valido*
+2- la funcion limpiar recibe un texto, y lo devuelve eliminando posibles espacios en sus extremos
+y capitalizando el texto (o sea, con la primera letra en mayuscula y el resto en minuscula)
+3- la funcion es_valido recibe en su argumento un nombre y valida que:
+    -sea un nombre de tres letras o mas, en caso de que tenga 3 letras o mas devuelve True
+    en caso contrario (len(nombre) < 3)devuelve false
+
+1* luego de crear las funciones, el programa da dos listas
+        -una llamada nombres con varios strings dentro
+        -una llamada validos que esta vacia
+    luego recorre los strings de la lista nombres uno a uno con for
+        -crea la variable nombre_limpio a la que le asigna el valor llamando a la funcion limpiar 
+      la cual en su argumento tiene el string de la iteracion en la que se encuentre
+    al condicional if le pone como condicion la funcion es_valido con el argumento nombre_limpio:
+        -dependiendo de lo que devuelva la funcion, si es true, agrega el nombre a la lista vacia
+        si es false, no agrega nada
+
+4- los nombres almacenadosen validos son: "Bart", "Walter" y "Rick"
+5- el programa al finalizar imprime la lista con nombres validos.

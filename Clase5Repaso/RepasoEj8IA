@@ -1,0 +1,17 @@
+def pedir_comida():
+#    """Solicita la comida al usuario y valida que esté en el menú."""
+    opciones = ["pizza", "hamburguesa", "milanesa"]
+    while True:
+        comida = input("Ingrese una comida (pizza, hamburguesa, milanesa): ").strip().lower()
+        if comida in opciones:
+            return comida
+        print("Opción inválida. Intente de nuevo.")
+
+def obtener_precio(comida):
+#    """Devuelve el precio numérico según la comida elegida."""
+    precios = {
+        "pizza": 1600,
+        "hamburguesa": 1200,
+        "milanesa": 1000
+    }
+    return precios.get(comida, 0)

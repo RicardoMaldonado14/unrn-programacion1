@@ -1,0 +1,31 @@
+los programas al interactuar con el mundo real pueden inducir errores
+la alternativa a el slicing
+una excepcion es una señal de que algo salio mal mientras el 
+programa se estaba ejecutando
+
+cuando python encuentra una excepcion:
+-corta la ejecucion del programa
+-muestra el traceback
+-muestra la linea y el tipo de excepcion
+-termina el programa si nadie maneja ese caso
+
+
+Validar y manejar excepciones
+no son herramientas competidora, las dos pueden solaparse
+LBYL: look before you leap/mirar antes de saltar (verificar con if)
+EAFP: 
+
+
+cuando usar cada una:
+if para reglas del problema:
+-rangos
+-opciones permitidas
+-estados validos
+
+try/except para operaciones que pueden fallar
+-conversiones
+-apertura de archivos
+
+
+Excepcion FileNotFoundError
+la excepcion FileNotFoundError se lanza cuando no se encuentra un archivo
